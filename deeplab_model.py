@@ -33,7 +33,7 @@ def atrous_spatial_pyramid_pooling(inputs, output_stride, batch_norm_decay, is_t
   Returns:
     The atrous spatial pyramid pooling output.
   """
-  with tf.variable_scope("assp"):
+  with tf.variable_scope("aspp"):
     if output_stride not in [8, 16]:
       raise ValueError('output_stride must be either 8 or 16.')
 
